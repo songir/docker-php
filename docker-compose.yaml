@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  symfony-fpm-alpine:
+    image: "songir/php-fpm:7.4-symfony-alpine3.14"
+    build:
+      context: "7.4/symfony-alpine/base"
+      args:
+        ALPINE_VERSION: ${ALPINE_VERSION}
+
